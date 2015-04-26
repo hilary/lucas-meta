@@ -1,6 +1,26 @@
 # Journal
 
-## 12:30pm, Saturday, April 25
+* [Saturday, April 25](#saturday-april-25)
+  * [Intro](#intro)
+  * [Initial pass through meta challenge](#initial-pass-through-meta-challenge)
+  * [Initial revision of code challenge](#initial-revision-of-code-challenge)
+  * [Comments after quick call with Lucas](#comments-after-quick-call-with-lucas)
+  * [Initial design of additional steps in code challenge](#initial-design-of-additional-steps-in-code-challenge)
+  * [A skeleton for the app](#a-skeleton-for-the-app)
+  * [Both repos on Github](#both-repos-on-Github)
+* [Sunday, April 26](#sunday-april-26)
+  * [Making the journal more useful](#making-the-journal-more-useful)
+  * [Thoughts about the challenge](#thoughts-about-the-challenge)
+  * [Strategy for tackling the challenge](#strategy-for-tackling-the-challenge)
+
+_I worked on the challenge over a weekend as I had time. I dated the intial
+entry in the journal each time I came back to the challenge. The dates are
+as much a habit from ethnomethodology as anything else._
+
+## Saturday, April 25
+
+### Intro
+_12:30pm_
 
 On call is happy, cats are fed, life is dealt with, sitting down to look at the
 challenge.
@@ -21,7 +41,8 @@ I set up a workspace:
 I decided to track changes in git, because what else would I use?  Created the
 repo locally and commited.
 
-## 1:09pm
+### Initial pass through meta challenge
+_1pm_
 
 Took a pass through the meta challenge, reached out to Lucas, moving on to the
 challenge itself. I've read through it once before.
@@ -40,8 +61,8 @@ I'm going to see what I can do as I take an initial pass through.
 I'm pulling in some detail for the meta challenge from the job description to
 guide reading the challenge.
 
-
-## 2:00pm
+### Initial revision of code challenge
+_2pm_
 
 Rewrote the first paragraph, started on the second, did some digging around the
 OpenAura developer site.
@@ -76,7 +97,8 @@ Through an initial revision of code challenge. Going to commit, get a snack, see
 if I can reach Lucas to resolve whether my understanding is flawed or whether
 there is an error in the challenge.
 
-## 4:00pm (give or take)
+### Comments after quick call with Lucas
+_4pm_
 
 Talked to Lucas, yup it's an error. Will explore thinking behind error when we
 talk again. Took a break, back to work.
@@ -109,14 +131,14 @@ Ok, I'm going to build an initial version of the app while waiting for Lucas to
 get back to me. I think I'll do that in a separate repo. Not sure why. Because.
 That's why.
 
-### quick addendum
+### Initial design of additional steps in code challenge
 
 When I went back to start on the app, I reread the additional info I had separated out
 and it sort of separated itself out into an initial set of additional steps. Not sure
 it will work out, but it has a similar design test feel to it now. Intrigued to see
 how it plays out.
 
-### building app
+### A skeleton for the app
 
 Don't forget about the beacon! Use beacon gif (prepend api.openaura.com/v1)
 
@@ -133,7 +155,8 @@ it. That's cool.
 (To Lucas: just so you know, I'm a fan of chruby and ruby-install, even in dev
 environments. I like my environments to be as consistent as possible.)
 
-## 7:00pm
+### Both repos on Github
+_7pm_
 
 Realized I had actually dropped my API key in this repo at one point as I had
 not intended to put it on github. Heh. Never, never, never. Anyway. Did a quick
@@ -143,4 +166,45 @@ Never, never, never.
 
 Will also upload prepped skeleton of app so as to be ready to work on it next
 break I get.
+
+## Sunday, April 26
+
+### Making the journal more useful
+_8am_
+
+Spent some time with this journal. (Didn't change any of the text, of course.)
+I'd already starting using semantically titled subsections yesterday. Today
+I headed each section semantically, after the main topic of the section, and
+moved the start time to metadata after the heading. Grouped entries by day
+and added a table of contents. Much better.
+
+### Thoughts about the challenge
+
+I'll clean these notes up and add them to `meta.md` later.
+
+I really like the design of the challenge.
+
+* It's as much a pure Ruby challenge as a Rails challenge, in that you can't
+  fall back on generators, etc., to complete it.
+
+* As it is written now, it presents a real temptation to start with
+  implementation, in the API calls, rather than interaction. We'd like to
+  capture as much of that process as we can. Perhaps we should say 'commit early,
+  commit often'? (Added instructions to that effect to the revised challenge.)
+
+* When I think of 'level', I'm looking for depth of understanding as much as
+  anything. The ability to recognize patterns and use them (including
+  anti-patterns).
+
+### Strategy for tackling the challenge
+
+I'm going to start with interaction :)
+
+A high-level plan of attack
+
+1. do a quick mockup of the views
+1. write and implement one e2e test at a time, mocking in the responses using
+   real data from developer.openaura.com/docs
+1. add in the logic to do the actual calls
+
 

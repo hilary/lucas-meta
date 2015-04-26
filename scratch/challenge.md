@@ -50,14 +50,16 @@ limit the particle list to the first 100 particles (more is okay).
 How to setup the app and which gems to use are up to you, but we ask that the
 OpenAura API requests are done on the Ruby server side, not on the client side.
 
-Build your project in source control, Github or something similar. When you have
-finished this step, tag the commit as step1 and push.
+Build your project in source control, Github or something similar. Commit early,
+commit often: we want to see how you develop. When you have finished this step,
+tag the commit as step1 and push.
 
 ## Step 2
 
 Instead of a preset list, let the user search for an artist.
 
-When you finish the step, tag the commit as step 2 and push.
+As before, commit often. When you finish the step, tag the commit as step 2 and
+push.
 
 ## Step 3
 
@@ -66,4 +68,5 @@ how many particles per provider should appear in a row. In the three provider
 example above, slice = 1. With slice = 2, it would look like: A1, A2, B1, B2,
 C1, C2, A3, A4, B3, B4, C3, C4 … etc. Bound the slice value from 1 to 5.
 
-When you finish the step, tag the commit as step 3 and push.
+As before, commit often. When you finish the step, tag the commit as step 3 and
+push.
