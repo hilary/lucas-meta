@@ -1,0 +1,21 @@
+Hi Hilary,
+
+Code challenge enclosed. Your mission is to critique and improve it.
+
+Our goals are:
+
+* Learn about the working profile of the developer. Who are they? Where do
+they excel, where are they weak? How skilled are they?
+* Not burden the developer. Consume no more of their time than necessary.
+* Communicate who we are as a company and what our technology is about.
+
+Don't take the sheer amount of text here as a problem. It's to add clarity
+and be helpful, not to add complexity and difficulty. Or do take it as a
+problem!
+
+Keep in touch as you're going along. Feel free to ask questions, ping,
+whatever.
+
+Hope you enjoy the project. See you Monday at 10.
+
+-Lucas
