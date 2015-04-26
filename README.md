@@ -76,4 +76,35 @@ Through an initial revision of code challenge. Going to commit, get a snack, see
 if I can reach Lucas to resolve whether my understanding is flawed or whether
 there is an error in the challenge.
 
+## 4:00pm (give or take)
 
+Talked to Lucas, yup it's an error. Will explore thinking behind error when we
+talk again. Took a break, back to work.
+
+Some quick notes.
+
+I wouldn't include suggestions about tests in the challenge at all. Testing is simply
+too important a habit and skill set to prompt around to give away. It's the first
+thing folks who haven't internalized it pitch overboard when under pressure or simply
+when not supervised closely. So I took all the info about testing out of the challenge.
+
+I also removed the comment about Heroku out of the challenge. I'd rather the dev face
+the need to include a README so the person evaluating has to run the app locally. If
+I can't install and run your app following your instructions, that tells me something.
+
+Testing and documentation are skills, sure, but before they are skills they are
+ways of thinking. We can teach the skill. We can't teach the way of
+thinking. It's too easy for a candidate for whom testing and writing is like
+pulling teeth to skate through an interview as someone who looks fun to be
+around, projects confidence, and prepped for the interview just right. Then
+you've got a developer that has a vested interest in changing your definition of
+done to meet their approach.
+
+Btw, I'm extrapolating OpenAura's values from: the inclusion of tests in the
+challenge, the comment that the amount of text wasn't inherently a bad thing,
+the quality of the API docs, ..., what else? But I feel reasonably confident about
+my extrapolation :)
+
+Ok, I'm going to build an initial version of the app while waiting for Lucas to
+get back to me. I think I'll do that in a separate repo. Not sure why. Because.
+That's why.
