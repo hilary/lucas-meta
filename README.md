@@ -207,4 +207,30 @@ A high-level plan of attack
    real data from developer.openaura.com/docs
 1. add in the logic to do the actual calls
 
+### Design notes
+_10am_
 
+The challenge explicitly says we are concerned with particle ordering.
+
+The default round robin slice size is 1.
+
+Table calls for a decorator, lol. I loathe logic in views.
+
+Heh. The 1970 date on the Tumblr particle is clearly bogus. Taylor
+Swift wasn't born in 1970!
+
+### Notes on the challenge
+_10am_
+
+(At the same time as above, if I were writing in a notebook, I'd have two
+columns.)
+
+We talk about 'media and content', but never use the term 'content' again with
+the exception of 'please ensure the artist is relatively popular with sufficient
+content'. It's only when you start digging into the particles that you realize
+that a single particle can have multiple pieces of media. That could be
+confusing given how the challenge is written. I did a bit of rewriting.
+
+Are we concerned about paginated views? Personally, I loathe the things. I'd
+always rather have a list or table on a single page unless it runs into the
+thousands.

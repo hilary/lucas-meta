@@ -8,8 +8,8 @@ stuck at any point.
 
 The OpenAura API serves media and content related to _artists_.
 
-* A piece of media relating to an artist is a _particle_.
-* Every particle comes from a _provider_, e.g., Facebook.
+* Media and content relating to an artist are _particles_.
+* Particles come from _providers_, e.g., Facebook.
 * The intersection of an artist and a provider is a _source_, e.g., an artist's
   band page on Facebook.
 
@@ -63,7 +63,7 @@ push.
 
 ## Step 3
 
-Allow the user to choose the size of the round robin slice. The slice determines
+Allow the user to change the size of the round robin slice. The slice determines
 how many particles per provider should appear in a row. In the three provider
 example above, slice = 1. With slice = 2, it would look like: A1, A2, B1, B2,
 C1, C2, A3, A4, B3, B4, C3, C4 … etc. Bound the slice value from 1 to 5.
