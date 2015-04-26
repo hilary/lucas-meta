@@ -33,10 +33,12 @@ round robin structure without using /v1/particles/artists/{id}. You could use
 ordering is determined by the date of the most recent particle, per artist
 source.
 
-The output and all user interactions on the page can by very simple - we
-are NOT looking for the prettiest page and are more concerned with basic
-user interactions and particle ordering. The particle listing only needs
-to show
+Allow a user to choose between a preset list of artists (2+). Ensure that the
+artists are relatively popular with sufficient content.
+
+The output and all user interactions on the page can by very simple - we are NOT
+looking for the prettiest page and are more concerned with basic user
+interactions and particle ordering. The particle listing only needs to show
 
 * provider name
 * particle date
@@ -45,22 +47,23 @@ to show
 per particle. Showing the particle media on the page is not required. You can
 limit the particle list to the first 100 particles (more is okay).
 
-How to setup the app and which gems to use are up to you, but we ask that
-the OpenAura API requests are done on the Ruby server side, not on the
-client side.
+How to setup the app and which gems to use are up to you, but we ask that the
+OpenAura API requests are done on the Ruby server side, not on the client side.
 
-Build your project in source control, Github or something similar. When you
-have finished this step, tag the commit as step1, push, then continue.
+Build your project in source control, Github or something similar. When you have
+finished this step, tag the commit as step1 and push.
 
-## This stuff should come in additional steps...
+## Step 2
 
-The app must allow a user to choose between multiple artists and
-to choose the size of the round robin slice.  Artist choice can simply be a
-preset list of artists (2+) or an interface to a search, but search is not
-required; if using preset list, please ensure the artist is relatively popular
-with sufficient content ( openaura.com a good place to check).  The slice
-determines how many particles per provider should appear in a row.  In the three
-provider example above, slice = 1.  With slice = 2, it would look like: A1, A2,
-B1, B2, C1, C2, A3, A4, B3, B4, C3, C4 … etc.  You can bound the slice value
-from 1 to 5.
+Instead of a preset list, let the user search for an artist.
 
+When you finish the step, tag the commit as step 2 and push.
+
+## Step 3
+
+Allow the user to choose the size of the round robin slice. The slice determines
+how many particles per provider should appear in a row. In the three provider
+example above, slice = 1. With slice = 2, it would look like: A1, A2, B1, B2,
+C1, C2, A3, A4, B3, B4, C3, C4 … etc. Bound the slice value from 1 to 5.
+
+When you finish the step, tag the commit as step 3 and push.

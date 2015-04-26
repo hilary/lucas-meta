@@ -108,3 +108,10 @@ my extrapolation :)
 Ok, I'm going to build an initial version of the app while waiting for Lucas to
 get back to me. I think I'll do that in a separate repo. Not sure why. Because.
 That's why.
+
+### quick addendum
+
+When I went back to start on the app, I reread the additional info I had separated out
+and it sort of separated itself out into an initial set of additional steps. Not sure
+it will work out, but it has a similar design test feel to it now. Intrigued to see
+how it plays out.
