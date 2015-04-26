@@ -115,3 +115,23 @@ When I went back to start on the app, I reread the additional info I had separat
 and it sort of separated itself out into an initial set of additional steps. Not sure
 it will work out, but it has a similar design test feel to it now. Intrigued to see
 how it plays out.
+
+### building app
+
+Don't forget about the beacon! Use beacon gif (prepend api.openaura.com/v1)
+
+    rails new openaura_cc --skip-bundle --skip-active-record
+
+Clean out the cruft (mailers, jobs, etc.) Basic pieces in place, configure api
+key in secrets. Putting api key in environment in development, too, as it's just
+as easy as specifying production every time I run the thing...
+
+Funny, this app is an odd little beast. Because I wouldn't write it (a single
+page app) in Ruby, lol, it isn't immediately clear to me what to drop into
+it. That's cool.
+
+(To Lucas: just so you know, I'm a fan of chruby and ruby-install, even in dev
+environments. I like my dev environments to be as consistent as possible.)
+
+
+
