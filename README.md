@@ -208,7 +208,7 @@ A high-level plan of attack
 1. add in the logic to do the actual calls
 
 ### Design notes
-_10am_
+_10am_ (On and off with several hour long gaps. Sunday was more distracting.)
 
 The challenge explicitly says we are concerned with particle ordering.
 
@@ -218,6 +218,53 @@ Table calls for a decorator, lol. I loathe logic in views.
 
 Heh. The 1970 date on the Tumblr particle is clearly bogus. Taylor
 Swift wasn't born in 1970!
+
+Taylor Swift: 10 sources, 10427 particles (47)
+Duran Duran: 11 sources, 13755 particles (417)
+Alanis Morissette: 11 sources, 1574 particles (302)
+Loreena McKennitt: 5 sources, 458 particles (113819)
+Pet Shop Boys: 9 sources, 4626 particles (556)
+
+I decided to do the challenge with native Rails to the extent reasonable.
+
+Are artist names unique? Probably not, as this database isn't constrained
+by a guild, lol.
+
+Always fun to write scenarios at the right level of abstraction :) I miss
+cucumber when working at places that don't use it. Interesting thought: if the
+cukes for a service / app / etc. are 'slowing down development', that's probably
+a great sign that the service / app / whatever is doing too much.
+
+Ah, I see what Lucas meant by ambiguity about ordering. It struck me as a vague
+description.
+
+ - "Provider ordering is determined by the date of the most recent particle, per
+    artist source."
+
+That's an odd description. A source is not a provider: an artist could have
+multiple sources from the same provider. There's something more going on here.
+
+Upon further exploration into Taylor Swift's response I discover that each tweet
+stream is a source (makes sense). The order also changes in the second slice,
+using a different source for Twitter. 
+
+That's cool. So the question becomes: reverse engineer the pattern, touch
+base about the ambiguity? How about touch base and reverse engineer if needed.
+
+Let's add a single route for our single page app. How, exactly, are we supposed
+to do a single page app all in Ruby? Are we allowed to use any JavaScript? If
+it's a single page app we pretty much have to.
+
+Ok, Rails just isn't the tool for this, could drive myself nuts reinventing
+the wheel. Gonna use Virtus or go nuts.
+
+So that's interesting. Because this app doesn't persist the data, using search
+is likely easier. It's where I would have gone with JavaScript, of course, but
+with Rails the prepopulated list seemed easier. Or was that how the challenge
+was worded?
+
+I'm going to commit the branch and if I get time to get back to it restart
+with search.
 
 ### Notes on the challenge
 _10am_
@@ -234,3 +281,9 @@ confusing given how the challenge is written. I did a bit of rewriting.
 Are we concerned about paginated views? Personally, I loathe the things. I'd
 always rather have a list or table on a single page unless it runs into the
 thousands.
+
+Oooo... how pretty. A chance to use Query objects!
+
+Hmmm... ok, this isn't one challenge, it's a whole bunch of them rolled into
+one, lol. We have so much great raw material here. What we need to do is
+pull out a set of smaller projects from this large one.

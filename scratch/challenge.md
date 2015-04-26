@@ -29,7 +29,7 @@ an artist also has Twitter, Instagram, Youtube, etc.
 Build a single page RAILS app that recreates the standard particle response
 round robin structure without using /v1/particles/artists/{id}. You could use
 /v1/source/artists/{id} to pull an artist’s sources, then
-/v1/particles/sources/{id} to pull the particles for those sources.  Provider
+/v1/particles/sources/{id} to pull the particles for those sources. Provider
 ordering is determined by the date of the most recent particle, per artist
 source.
 
