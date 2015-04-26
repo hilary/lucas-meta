@@ -131,7 +131,16 @@ page app) in Ruby, lol, it isn't immediately clear to me what to drop into
 it. That's cool.
 
 (To Lucas: just so you know, I'm a fan of chruby and ruby-install, even in dev
-environments. I like my dev environments to be as consistent as possible.)
+environments. I like my environments to be as consistent as possible.)
 
+## 7:00pm
 
+Realized I had actually dropped my API key in this repo at one point as I had
+not intended to put it on github. Heh. Never, never, never. Anyway. Did a quick
+reconstruction of the repo (preserving history) without the API key
+(thankyouverymuch). Ended up with a time shift but the order is the same. Ah well.
+Never, never, never.
+
+Will also upload prepped skeleton of app so as to be ready to work on it next
+break I get.
 
